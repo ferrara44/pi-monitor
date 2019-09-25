@@ -19,7 +19,12 @@ while True:
     if (cpu>70):
         sense.show_message("CPU TEMPERATURE CRITICAL %cpu C" % temp, scroll_speed=0.06, text_colour=[255, 0, 0])        
     sense.show_message("%.0f C" % temp, scroll_speed=0.06, text_colour=[100, 0, 0])
-    emu.show_message("%.0f C" % temp, scroll_speed=0.06, text_colour=[100, 0, 0])
     sense.show_message("%.0f %%rH" % humidity, scroll_speed=0.06, text_colour=[10, 10, 100])
     sense.show_message("%.1f hPa" % pressure, scroll_speed=0.06, text_colour=[0, 100, 0])
     sense.show_message(datetime.now().strftime('%d/%m %H:%M'), scroll_speed=0.06, text_colour= [100,100,100])
+
+    emu.show_message("%.0f C" % temp, scroll_speed=0.06, text_colour=[100, 0, 0])
+    emu.show_message("%.0f %%rH" % humidity, scroll_speed=0.06, text_colour=[10, 10, 100])
+    emu.show_message("%.1f hPa" % pressure, scroll_speed=0.06, text_colour=[0, 100, 0])
+    emu.show_message(datetime.now().strftime('%d/%m %H:%M'), scroll_speed=0.06, text_colour= [100,100,100])
+
